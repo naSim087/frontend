@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+html , body{
+  height: 100%;
+  width: 100%;
+}
+
+#main{
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(0, 255, 136); */
+}
+#nav{
+  height: 80px;
+  width: 100%;
+  background-color: white;
+
+  display: flex;
+  /* this will make the element to come in a line */
+
+  /* this will bring all the element in center of div in terms of y
+  axis not in terms of x axis */
+  align-items: center;
+  
+/* this will bring all the content in the end in terms of x axis */
+  justify-content: flex-end;
+  
+
+/* this will bring the gap between the element which are inside the div */
+  gap: 20px;
+
+
+  padding: 0 5px;
+  /* this is used to provide the space in terms of both x and y 
+  which is called as padding  the first term is for y axis and 
+  the another term is for x axis */
+
+}
+
+#nav h4 {
+  font-size: 20px;
+}
+
+#nav i{
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  padding: 10px;
+
+  /* this will make the border curverd */
+  border-radius: 30px;
+}
+#center{
+
+  width: 100%;
+  /* background-color: aqua; */
+ 
+  padding: 0px 80px;
+}
+#center h1{
+  font-size: 40px;
+
+  /* this will make the text patla that is it will make the text look
+  like slim  */
+  font-weight: 500;
+
+  /* THIS WILL MAKE THE LINE CLOSER TO EACH OTHER OR FARTHER TO EACH OTHER */
+  line-height: 40px;
+}
+
+#centerin{
+
+  height: 200px;
+  /* background-color: bisque; */
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+
+  /* this will move the div from the div which was located above it */
+  margin-top: 50px;
+}
+
+#centerin p{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+#right
+{
+  width: 20%;
+}
+.elem{
+  /* background-color: cadetblue; */
+
+  /* this will provide the space between the element which are oriented along
+  the y axis */
+  /* margin: 5px; */
+
+
+  padding: 10px ;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+/* this will create the line  */
+  border-top: 2px solid black;
+  
+}
+.elem i {
+  font-size: 25px;
+  font-weight: 500;
+
+  /* this will make the item to disappear
+  but they are present there */
+  opacity: 0;
+
+}
+
+/* this means that the parent in .elem so when we put the cursor on elem 
+then we are targeting the i tag 
+so when we hover over the .elem then what writtin inside will apply to the ith tag */
+.elem:hover i{
+opacity: 1;
+}
+
+.elem:hover{
+  background-color: bisque;
+}
+.elem a{
+  color: black;
+
+  /* this make the under line of  the a tag to disappear  */
+  text-decoration: none;
+}
+
+
+#bottom{
+  height: 60%;
+  background-color: blue;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1725203574059-389c2116aad1?q=80&w=3117&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+  background-size: cover;
+
+  /* first is for x axis  */
+  /* second is for the y axis alignment */
+  background-position:0 40% ;
+}
